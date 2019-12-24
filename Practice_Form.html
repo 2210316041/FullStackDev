@@ -1,0 +1,60 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script type="text/javascript">
+function my()
+{
+var a=document.getElementById("t1");
+var pattern=RegExp("^[a-z A-Z _ .]{6,12}$");
+var a1=document.getElementById("t2");
+var pattern1=RegExp("^[a-z A-Z _ . @ $ % 0-9]{6,10}$");
+var a2=document.getElementById("t3");
+var pattern2=RegExp("^[0][6-9][0-9]{9}$");
+if(pattern.test(a.value))
+{
+if(pattern1.test(a1.value))
+{
+if(pattern2.test(a2.value))
+{
+}
+else
+{
+document.write("Invalid-Number");
+}
+}
+else
+{
+document.write("Invalid-Password");
+}
+}
+else
+{
+document.write("Invalid-username");
+}
+}
+</script>
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-md-4">
+</div>
+<div class="col-md-6">
+<form>
+<div class="form-group">
+<h3>Form-Validation</h3>
+<label>USERNAME:
+<input type="text" class="form-control" id="t1" placeholder="Enter Username">
+<label>PASSWORD:
+<input type="password" class="form-control" id="t2" placeholder="Enter Password">
+<label>EMAIL-ID:
+<input type="text" class="form-control" id="t3" placeholder="Enter Email">
+<br />
+<button class="btn btn-success" onclick="my()">Submit</button>
+</div>
+</form>
+</div>
+<div class="col-md-2">
+</div>
+</body>
+</html>
