@@ -2,18 +2,20 @@
 <head>
 </head>
 <body>
+<form>
 <h1>Registration-Form</h1>
-Name:<input type="text" id="u1" placeholder="Enter Name">
+Name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="u1" placeholder="Enter Name" pattern="^[a-z A-Z _ .]{6,12}$">
 <br>
 <br>
-Address:<textarea type="text" id="u2"  placeholder="Enter Address"></textarea>
+Address:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<textarea type="text" id="u2"  placeholder="Enter Address"></textarea>
 <br>
-Email:<input type="email" id="u3"  placeholder="Enter Email">
-<br>
-<br>
-Password:<input type="password" id="u4"  placeholder="Enter password">
+Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="email" id="u3"  placeholder="Enter Email" pattern="^[a-z A-Z 0-9 _ .]{6,12}[@][a-z A-z]{4,9}[.][a-z]{2,3}$">
 <br>
 <br>
+Password:&nbsp;&nbsp;&nbsp;<input type="password" id="u4"  placeholder="Enter password" title="Enter Apha And Numericals" pattern="^[a-z A-Z _ . @ $ % 0-9]{6,10}">
+<br>
+<br>
+Phone:<input type="phone" id="ii6" placeholder="Enter Number" pattern="^[6-9]{1}[0-9]{9}$">
 <br>
 Select Your Option:<select>
 <option>0</option>
@@ -31,5 +33,6 @@ FeedBack:<input type="range" max=10 min=1>
 <br>
 <input type="submit" id="u5" value="submit">
 <br>
+</form>
 </body>
 </html>
