@@ -1,0 +1,57 @@
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function()
+    {
+        $("#b1").click(function()
+        {
+            var a=$("#i1").val();
+            var a1=$(".cart1").children().length;
+            
+            $(".cart1").append("<li class="+a+a1+"><b>"+a+"&nbsp;&nbsp;</b><button id="+a+a1+">Remove</button></li>");
+            $("#b2").click(function(){
+                $("."+a+a1+"").addClass("a4");
+                $("button").addClass("btn btn-success");
+            $("button").click(function()
+            {
+                var a3=($(this).attr("id"));  
+                $("."+a3+"").remove();
+            })
+            });
+            $("#b3").click(function()
+            {
+                $(".cart1").empty();
+            });
+        });
+    });
+</script>
+<style>
+.a4{
+    color:orangered;
+    
+    }
+
+</style>
+<body>
+    <h1>Cart Items</h1>
+
+        <input type="text" id="i1" />
+        <br />
+        <ol class="cart1">
+
+        </ol>
+        <button class="btn btn-success" id="b1">ADD To Cart</button>
+        <button class="btn btn-success" id="b2">ADD Class To Item</button>
+        <button class="btn btn-success" id="b3">Clear All Items</button>
+
+    
+</body>
+</html>
