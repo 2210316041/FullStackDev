@@ -30,7 +30,7 @@
   line-height: 1;
 }
 #cssmenu ul {
-  background: #ffffff;
+  background: brown;
 }
 #cssmenu > ul > li {
   float: left;
@@ -56,7 +56,7 @@
   font-size: 15px;
   font-weight: 400;
   text-decoration: none;
-  color: #444444;
+  color: white;
   -webkit-transition: all .2s ease;
   -moz-transition: all .2s ease;
   -ms-transition: all .2s ease;
@@ -90,8 +90,8 @@
   transform: perspective(5px) rotateX(2deg);
   transform-origin: bottom;
 }
-#cssmenu > ul > li.active > a:after,
-#cssmenu > ul > li:hover > a:after,
+#cssmenu > ul > li.active > a,
+#cssmenu > ul > li:hover > a,
 #cssmenu > ul > li > a:hover:after {
   background: #47c9af;
 }

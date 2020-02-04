@@ -13,9 +13,7 @@
             height: 150
         });
         $("#btnShow").click(function () {
-            var a=$("#Email1").val();
             $('#dialog').dialog('open');
-            $("#dialog").append(a);
         });
     });
 </script>
@@ -23,24 +21,22 @@
 <body>
 <div class="container">
     <h1 style="text-align:center;">Form-Popup</h1>
-  <div class="form-control">
-        <form>
-            Username:
-            <input id="Email1" type="email" placeholder="Enter Username" class="form-control">
-            <br />
-            <br />
+  <div>
+        <form method="POST">
+            Email:
+            <input id="em" type="email" placeholder="Enter Email">
+            
             Password:
-            <input id="password1" type="password" placeholder="Enter Password" class="form-control">
-        
-    <br />
-    <br />
+            <input id="pass" type="password" placeholder="Enter Password">
+     
+    
                 <input type="button" id="btnShow" value="Submit"/>
           
         
         </form>
-       </div> 
+    </div>    
     </div>
 <div id="dialog" style="display: none" align = "center">
-
+    Pop-Up Generated.
 </div>
 </body>

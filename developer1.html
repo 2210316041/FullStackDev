@@ -1,0 +1,104 @@
+<html>
+<head>
+<link rel="stylesheet" href="F:\Full_Stack_Dev\Dev_Profile\bootstrap-4.4.1\dist\css\bootstrap.min.css"></link>
+ <link rel="stylesheet" href="styles.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("form").submit(function(){
+  var a=$('#email1').val();
+  var b=$('#pass1').val();
+  var c=$('#mob2').val();
+  if (a.length < 1) {
+      $('#email2').css({"visibility":"visible"});
+      return false;
+    }
+    else
+    {
+        var regEx1 = /^[a-z]{3,20}[@][a-z]{4,6}\.[a-z]{2,4}$/;
+      var email1 = regEx1.test(a);
+      if (!email1)
+      {
+          $('#email2').css({"visibility":"visible"});
+          return false;
+      }
+    }
+    if (b.length < 1) {
+      $('#p2').css({"visibility":"visible"});
+      return false;
+    }
+    else
+    {
+        var regEx2 = /^[a-z]{6}[_ .]{1}[0-9]{2,6}$/;
+      var pp1 = regEx2.test(b);
+      if (!pp1)
+      {
+          $('#pass1').css({"visibility":"visible"});
+          return false;
+      }
+    }
+    if (c.length < 1) {
+      $('#m1').css({"visibility":"visible"});
+      return false;
+    }
+    else
+    {
+        var regEx = /^[9][0-9]{9}$/;
+      var mobile1 = regEx.test(c);
+      if (!mobile1)
+      {
+          $('#m1').css({"visibility":"visible"});
+          return false;
+      }
+    }
+  });
+});
+</script>
+ <style>
+body  {
+  background-image: url("as3.jpg");
+  background-color: #cccccc;
+}
+ </style>
+</head>
+<body>   
+<div class="responsive">
+    <div class="row">
+        <div class="col-md-4" style="margin-top: 150px; margin-left: 30px;">
+      <h3 style="color: white;"><strong>Welcome To The Team!</strong><br />
+        <br />
+        We are thrilled to have you at our team. <br />
+        You’re going to be a valuable asset to our team and we can’t wait to see all that you accomplish.</h3>
+        </div>
+        <div class="col-md-4 g1" style="margin-top: 100px;margin-left: 280px;">
+      <div >
+          <h3 style="color: aliceblue;">JOIN WITH ME TO COLLABORATE</h3>
+          <form>
+              <label style="color: white;"><strong>Enter Your Email</strong></label>
+              <input type="email" id="email1" class="form-control" />
+              <span style="color: tomato;visibility: hidden;" id="email2"><strong>Invalid Email-Id Entered</strong></span>
+              
+              <br />
+              <label style="color: white;"><strong>Enter Your Password</strong></label>
+              <input type="password" id="pass1" class="form-control" />
+              <span style="color: tomato;visibility: hidden;" id="p2";><strong>Invalid Password Pattern</strong></span>
+              
+              <br />
+              <label style="color: white;"><strong>Mobile</strong></label>
+        
+              <input type="text" id="mob2" class="form-control" />
+              <span style="color: tomato;visibility: hidden;" id="m1"><strong>Entered Invalid Mobile Number</strong></span>
+              
+              <br />
+              <center><input type="checkbox"><b style="color:white;">I Accept Terms And Condition.</b></center>
+              <br />
+              <input type="submit" value="Submit" class="btn btn-primary" style="width:100% ;" />
+          </form>
+      </div>
+        </div>
+        <div class="col-md-4">
+      
+        </div>
+</div> 
+</body>
+</html>
