@@ -1,0 +1,74 @@
+<h1 [style.color]='g1'>Task-2</h1>
+<table border="5" style="width:500px;height: 100px;">
+<tr>
+    <th>
+        Name
+    </th>
+    <th>
+        Pin
+    </th>
+    <th>
+        Section
+    </th>
+</tr>
+<tr>
+    <td *ngFor="let a1 of Ex3">
+        {{a1.name}}
+    </td>
+    <td *ngFor="let a1 of Ex3">
+        {{a1.pin}}
+    </td>
+    <td *ngFor="let a1 of Ex3">
+        {{a1.section}}
+    </td>
+</tr>
+<tr>
+    <td *ngFor="let b1 of Ex3">
+        {{b1.name}}
+    </td>
+    <td *ngFor="let b1 of Ex3">
+        {{b1.pin}}
+    </td>
+    <td *ngFor="let b1 of Ex3">
+        {{b1.section}}
+    </td>
+</tr>
+<tr>
+    <td *ngFor="let a3 of Ex4">
+{{a3.name}}
+    </td>
+    <td *ngFor="let a3 of Ex4">
+{{a3.pin}}
+    </td>
+    <td *ngFor="let a3 of Ex4">
+{{a3.section}}
+    </td>
+</tr>
+</table>
+<br />
+<hr >
+<h1 [style.color]="g2">Task-3</h1>
+<div *ngFor="let a3 of Ex4">
+    <div style="border-radius: 100px;margin-left:50%;border: 5px solid black;width:150px;text-align: center;height:150px;">
+    <br />
+    <br />
+        Name:{{a3.name}}
+    <br />
+    Pin:{{a3.pin}}
+    <br />
+    Section:{{a3.section}}
+    </div>
+    <br />
+</div>
+<div *ngFor="let a34 of Ex5">
+    <div style="border-radius: 100px;margin-left:50%;border: 5px solid black;width:150px;text-align: center;height:150px;">
+    <br />
+    <br />
+        Name:{{a34.name}}
+    <br />
+    Pin:{{a34.pin}}
+    <br />
+    Section:{{a34.section}}
+    </div>
+    <br />
+</div>
