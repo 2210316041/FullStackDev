@@ -1,0 +1,26 @@
+<h1 style="text-align: center;background-color: orange">Task-1</h1>
+<div  [style.background-color]="g1">
+    
+<div><img src="assets/i2.jpg"  style="width: 14.89%;border: 5px solid black;" /></div>
+<div *ngFor="let a1 of E">
+    <div style="border-bottom:5px solid black;border-left:5px solid black;border-right:5px solid black;width:198px;margin-top: -20px;">
+        <p [style.color]="c1"> Name:{{a1.Name}}</p>
+        <p [style.color]="c1">Pin:{{a1.Pin}}</p>
+        <p [style.color]="c1">Branch:{{a1.Branch}}</p>
+        <button (click)="change()">Click Here To Change Color</button>
+    </div>
+    <br />
+    <div style="margin-left: 500px;margin-top: -353px;">
+    <div><img src="assets/i2.jpg"  style="width: 23.79%;border: 5px solid black;" /></div>
+    <div *ngFor="let a1 of E1">
+        <div style="border-bottom:5px solid black;border-left:5px solid black;border-right:5px solid black;width:198px;margin-top: -20px;">
+           <p [style.color]="c1"> Name:{{a1.Name}}</p>
+            <p [style.color]="c1">Pin:{{a1.Pin}}</p>
+            <p [style.color]="c1">Branch:{{a1.Branch}}</p>
+            <button (click)="change1()">Click Here To Change Color</button>
+        </div>
+</div>
+</div>
+</div>
+</div>
+<app-circle></app-circle>
