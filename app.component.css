@@ -1,0 +1,45 @@
+ul
+{
+    margin: 20;
+    padding: 20;
+    margin-top: -40px;
+}
+ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin-left: 150px;
+    
+}
+ul li a
+{
+    text-decoration: none;
+    color:black;
+    
+}
+ul li a:hover
+{
+    color:red;
+    
+    
+}
+.l1
+{
+    margin-left: 155px;
+    margin-top:35px;
+}
+.l2
+{
+    margin-left: 920px;
+    margin-top:-35px;
+}
+h5
+{
+    margin-left: 1150px;
+    margin-top:-30px;
+}
+.e1
+{
+    display: inline-block;
+    
+}

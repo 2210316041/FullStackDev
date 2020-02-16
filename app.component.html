@@ -1,3 +1,62 @@
-<button (click)="onclick1()">Click</button>
-<app-card></app-card>
-<app-table [color]="mycolor"></app-table>
+<div style="background-color: gainsboro;padding: 20px;">
+  <div>
+  <h2 style="margin-left: 50px;margin-top: 20px;">NEWS</h2>
+  </div>
+  <ul>
+    <li>
+      <a routerLink="/Home">Home</a>
+    </li>
+    <li>
+      <a routerLink="/Videos">Videos</a>
+    </li>
+    <li>
+      <a routerLink="/Fools">Fools</a>
+    </li>
+    <li>
+      <a routerLink="/Magazine">Magazine</a>
+    </li>
+  </ul>
+  <div style="margin-left:860px;margin-top:-28px;">
+    <i class="fa fa-plus"></i>
+  </div>
+  <div style="margin-left:927px ;margin-top:-20px;">
+    <i class="fa fa-bell"></i>
+  </div>
+</div>
+<div style="margin-top:-35px;margin-left: 58px;">
+  <input type="text" placeholder="Search" style="margin-left: 960px;margin-top:-75px;border-radius:20px;color: gray" />
+  <i class="fa fa-search" style="margin-left:-40px;"></i>
+</div>
+
+<div style="background-color: gainsboro;padding: 15px;">
+  <h3 class="l1">Today's Headlines</h3>
+  <h3 class="l2">Sports News</h3>
+  <h5>See All</h5>
+</div>
+<br />
+<br />
+<div style="border: 2px solid whitesmoke;display: inline-block;border-radius: 5px;margin-left: 25px;background-color: gainsboro;padding:5px;">
+  <img src="assets/N.png" style="width:30px;margin-left: 12px;" />
+  <h4>Sri Sai Puppala</h4>
+</div>
+<div class="responsive"  >
+  <div class="row" style="background-color: gainsboro;">
+    <div class="col-md-6" style="margin-left: -145px;width:100px;margin-top: 50px;background-color: ivory;">
+  <ul style="text-decoration: none;list-style-type: none;">
+    <li style="padding-top: 25px;"><a href="#">National</a></li>
+    <li style="padding-top: 25px;"><a href="#">International</a></li>
+    <li style="padding-top: 25px;"><a href="#">Trending</a></li>
+    <li style="padding-top: 25px;"><a href="#">Tech</a></li>
+    <li style="padding-top: 25px;"><a href="#">Business</a></li>
+    <li style="padding-top: 25px;"><a href="#">Movies</a></li>
+    <li style="padding-top: 25px;"><a href="#">Health</a></li>
+    <li style="padding-top: 25px;"><a href="#">Photos</a></li>
+    <li style="padding-top: 25px;"><a href="#">Cricket</a></li>
+  </ul>
+  </div>
+  </div>
+</div>
+
+
+
+<router-outlet></router-outlet>
