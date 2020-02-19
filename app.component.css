@@ -1,45 +1,14 @@
-ul
+ul li a
 {
-    margin: 20;
-    padding: 20;
-    margin-top: -40px;
+    text-decoration: none;
+    color:white;
 }
 ul li
 {
     list-style: none;
-    display: inline-block;
-    margin-left: 150px;
-    
-}
-ul li a
-{
-    text-decoration: none;
-    color:black;
-    
+    margin: 20px;
 }
 ul li a:hover
 {
-    color:red;
-    
-    
-}
-.l1
-{
-    margin-left: 155px;
-    margin-top:35px;
-}
-.l2
-{
-    margin-left: 920px;
-    margin-top:-35px;
-}
-h5
-{
-    margin-left: 1150px;
-    margin-top:-30px;
-}
-.e1
-{
-    display: inline-block;
-    
+    color: blue;
 }
