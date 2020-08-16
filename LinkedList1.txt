@@ -1,0 +1,81 @@
+package com.srisai1;
+import java.util.*;
+public class Substring
+{
+private static LinkedList<String> l1=new LinkedList<String>();
+public static void main(String args[])
+{
+	l1.add("Chicago");
+	l1.add("America");
+	l1.add("Bangladesh");
+	l1.add("England");
+	l1.add("Hyderabad");
+	
+	System.out.println("0.close\n"
+			+ "1.Forward\n"
+			+ "2.Reverse\n");
+	print1(l1);
+
+}
+public static void print1(LinkedList<String> l2)
+{
+	ListIterator<String> l3=l2.listIterator();
+	boolean a1=false;
+	Scanner sc=new Scanner(System.in);
+	while(!a1)
+	{
+		int a=sc.nextInt();
+		switch(a)
+		{
+		case 0:a1=true;
+		break;
+		case 1:if(l3.hasNext())
+		{
+			System.out.println(l3.next());
+		}
+		else
+		{
+			System.out.print("Reached End");
+		}
+		break;
+		case 2:if(l3.hasPrevious())
+		{
+			System.out.println(l3.previous());
+		}
+		else
+		{
+			System.out.print("Reached Top");
+		}
+		break;
+		}
+	}
+	
+}
+public static void add1(LinkedList<String> l3,String name)
+{
+	ListIterator<String> l4=l3.listIterator();
+	int a1=l4.next().compareTo(name);
+	if(a1==0)
+	{
+		System.out.println("Element Exits");
+	}
+	else if(a1>0)
+	{
+		l4.previous();
+		l4.add(name);
+	}
+	else
+	{
+		
+	}
+}
+public static void remove2(String name)
+{
+	l1.remove(name);
+}
+public static void update1(String name,String name1)
+{
+	int a1=l1.indexOf(name);
+	l1.set(a1,name1);
+}
+}
