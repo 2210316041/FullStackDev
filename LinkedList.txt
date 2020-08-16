@@ -1,0 +1,57 @@
+package com.srisai1;
+import java.util.*;
+public class Substring
+{
+private static LinkedList<String> l1=new LinkedList<String>();
+public static void main(String args[])
+{
+	l1.add("America");
+	l1.add("Bangladesh");
+	l1.add("Chicago");
+	l1.add("England");
+	System.out.println("1.Add List\n"
+			+ "2.Print\n"+
+			"3.Remove\n"
+			+"4.Update\n");
+	Scanner sc=new Scanner(System.in);
+
+	for(int i=0;i<2;i++)
+	{
+		int t1=sc.nextInt();
+	switch(t1)
+	{
+	case 1:add1(l1,"Africa");
+	break;
+	case 2:print1(l1);
+	break;
+	case 3:remove2("Africa");
+	break;
+	case 4:update1("America","SRISAI");
+	break;
+	default:System.out.println("Invalid Option");
+	break;
+	}
+}
+}
+public static void print1(LinkedList<String> l2)
+{
+	Iterator<String> l3=l2.iterator();
+	while(l3.hasNext())
+	{
+		System.out.println(l3.next());
+	}
+}
+public static void add1(LinkedList<String> l3,String name)
+{
+	l3.add(name);
+}
+public static void remove2(String name)
+{
+	l1.remove(name);
+}
+public static void update1(String name,String name1)
+{
+	int a1=l1.indexOf(name);
+	l1.set(a1,name1);
+}
+}
